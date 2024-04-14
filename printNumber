@@ -1,0 +1,38 @@
+public static String printNumber(String s, int n) 
+{
+    //Your code here
+    HashMap<Character,Integer> keypad=new HashMap<>();
+    keypad.put('a', 2);
+    keypad.put('b', 2);
+    keypad.put('c', 2);
+    keypad.put('d', 3);
+    keypad.put('e', 3);
+    keypad.put('f', 3);
+    keypad.put('g', 4);
+    keypad.put('h', 4);
+    keypad.put('i', 4);
+    keypad.put('j', 5);
+    keypad.put('k', 5);
+    keypad.put('l', 5);
+    keypad.put('m', 6);
+    keypad.put('n', 6);
+    keypad.put('o', 6);
+    keypad.put('p', 7);
+    keypad.put('q', 7);
+    keypad.put('r', 7);
+    keypad.put('s', 7);
+    keypad.put('t', 8);
+    keypad.put('u', 8);
+    keypad.put('v', 8);
+    keypad.put('w', 9);
+    keypad.put('x', 9);
+    keypad.put('y', 9);
+    keypad.put('z', 9);
+
+    StringBuilder sb=new StringBuilder();
+    for(char c:s.toCharArray())
+    {
+        sb.append(keypad.get(c));
+    }
+    return sb.toString();
+}
